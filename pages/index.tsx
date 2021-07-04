@@ -1,59 +1,97 @@
-import Head from 'next/head'
-import {
-  FaGithub,
-  FaInstagram,
-  FaInstagramSquare,
-  FaLinkedin,
-  FaTwitter,
-} from 'react-icons/fa'
-import SocialIcon from '../components/SocialIcon'
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { BsArrowUpRight } from 'react-icons/bs'
 
-export default function Home() {
+import SocialIcon from '@components/SocialIcon'
+import styles from '@styles/Home.module.css'
+
+function Home() {
   return (
     <>
-      <Head>
-        <title>Farrel Darian</title>
-        <meta name='description' content='Portfolio website of Farrel Darian' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-
-      <div className='relative min-h-screen'>
+      <div className='relative min-h-screen text-[#061B29]'>
         <div
           className='
             absolute inset-0
-            bg-gradient-to-br from-blue-200 via-green-50 to-yellow-100
+            flex
+            justify-end
+            items-end
+            bg-gray-100
           '
-        ></div>
-        <div
+        >
+          <div className={styles.grad}></div>
+        </div>
+
+        <main
           className='
             z-10
+            relative
             flex flex-col
-            justify-center items-center
+            justify-between items-center
+            py-16 px-8 sm:p-16
             min-h-screen
             backdrop-blur
           '
         >
-          <h1 className='font-bold text-2xl'>Site will be available soon...</h1>
-          <div className='flex space-x-4 mt-4'>
-            <SocialIcon
-              icon={<FaGithub />}
-              href='https://github.com/farreldarian'
-            />
-            <SocialIcon
-              icon={<FaLinkedin />}
-              href='https://www.linkedin.com/in/farreldarian/'
-            />
-            <SocialIcon
-              icon={<FaInstagram />}
-              href='https://www.instagram.com/farrelfd/'
-            />
-            <SocialIcon
-              icon={<FaTwitter />}
-              href='https://twitter.com/farreldarian'
-            />
+          <p></p>
+          <div className='max-w-2xl'>
+            <h1 className='font-bold text-6xl'>Hi, I’m Farrel Darian </h1>
+            <p className='text-xl mt-8'>
+              Full-Time Laboratory Assistant at Binus, Blockchain Developer /
+              Researcher, and Full-Stack Web Developer. Specializing in
+              Artificial Intelligence (degree), but has a passion for future Web
+              3.0 technologies.
+            </p>
+
+            <div className='block sm:flex items-center mt-8 space-y-4'>
+              <a
+                href='mailto:contact@farreldarian.com'
+                className='
+                  group
+                  flex items-center
+                  mr-4 pb-1
+                  transition duration-150
+                  border border-transparent
+                  hover:border-b-white/100
+                  rounded-sm
+                '
+              >
+                contact@farreldarian.com
+                <BsArrowUpRight className='transition duration-150 opacity-0 group-hover:opacity-100 ml-4' />
+              </a>
+
+              <div className='flex space-x-4 ml-auto'>
+                <SocialIcon
+                  icon={<FaGithub />}
+                  analyticsName='github'
+                  href='https://github.com/farreldarian'
+                  className='hover:text-black hover:bg-white/10'
+                />
+                <SocialIcon
+                  icon={<FaLinkedin />}
+                  analyticsName='linkedin'
+                  href='https://www.linkedin.com/in/farreldarian/'
+                  className='hover:text-[#225AA4] hover:bg-[#bed1ec44]'
+                />
+                <SocialIcon
+                  icon={<FaInstagram />}
+                  analyticsName='instagram'
+                  href='https://www.instagram.com/farrelfd/'
+                  className='hover:text-[#C23F81] hover:bg-[#ecd1df44]'
+                />
+                <SocialIcon
+                  icon={<FaTwitter />}
+                  analyticsName='twitter'
+                  href='https://twitter.com/farreldarian'
+                  className='hover:text-[#48A1EB] hover:bg-[#cae3f744]'
+                />
+              </div>
+            </div>
           </div>
-        </div>
+
+          <p className='text-xs text-gray-300 italic'>* temporary site</p>
+        </main>
       </div>
     </>
   )
 }
+
+export default Home
