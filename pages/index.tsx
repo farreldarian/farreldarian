@@ -3,10 +3,11 @@ import { BsArrowUpRight } from 'react-icons/bs'
 
 import SocialIcon from '@components/SocialIcon'
 import styles from '@styles/Home.module.css'
+import Page from '@components/Page'
 
 function Home() {
   return (
-    <>
+    <Page>
       <div className='relative min-h-screen text-[#061B29]'>
         <div
           className='
@@ -90,7 +91,7 @@ function Home() {
           <p className='text-xs text-gray-300 italic'>* temporary site</p>
         </main>
       </div>
-    </>
+    </Page>
   )
 }
 

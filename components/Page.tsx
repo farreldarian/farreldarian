@@ -2,8 +2,8 @@ import Head from 'next/head'
 import { ReactNode } from 'react'
 
 interface Props {
-  title: string
-  description: string
+  title?: string
+  description?: string
   children: ReactNode
 }
 
