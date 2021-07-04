@@ -1,10 +1,14 @@
+import useSocialAnalytics from '@lib/firebase/hooks/useSocialAnalytics'
 import clsx from 'clsx'
 import { AnchorHTMLAttributes, ReactNode } from 'react'
 
 interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
   icon: ReactNode
+  analyticsName: string
 }
-function SocialIcon({ icon, className, ...props }: Props) {
+function SocialIcon({ icon, analyticsName, className, ...props }: Props) {
+  useSocialAnalytics(analyticsName)
+
   return (
     <a
       className={clsx(

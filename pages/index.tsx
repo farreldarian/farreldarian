@@ -61,21 +61,25 @@ function Home() {
               <div className='flex space-x-4 ml-auto'>
                 <SocialIcon
                   icon={<FaGithub />}
+                  analyticsName='github'
                   href='https://github.com/farreldarian'
                   className='hover:text-black hover:bg-white/10'
                 />
                 <SocialIcon
                   icon={<FaLinkedin />}
+                  analyticsName='linkedin'
                   href='https://www.linkedin.com/in/farreldarian/'
                   className='hover:text-[#225AA4] hover:bg-[#bed1ec44]'
                 />
                 <SocialIcon
                   icon={<FaInstagram />}
+                  analyticsName='instagram'
                   href='https://www.instagram.com/farrelfd/'
                   className='hover:text-[#C23F81] hover:bg-[#ecd1df44]'
                 />
                 <SocialIcon
                   icon={<FaTwitter />}
+                  analyticsName='twitter'
                   href='https://twitter.com/farreldarian'
                   className='hover:text-[#48A1EB] hover:bg-[#cae3f744]'
                 />
