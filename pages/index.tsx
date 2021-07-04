@@ -1,7 +1,8 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import SocialIcon from '../components/SocialIcon'
-import styles from '../styles/Home.module.css'
 import { BsArrowUpRight } from 'react-icons/bs'
+
+import SocialIcon from '@components/SocialIcon'
+import styles from '@styles/Home.module.css'
 
 function Home() {
   return (
