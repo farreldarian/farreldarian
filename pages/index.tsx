@@ -36,10 +36,9 @@ function Home() {
           <div className='max-w-2xl'>
             <h1 className='font-bold text-6xl'>Hi, I’m Farrel Darian </h1>
             <p className='text-xl mt-8'>
-              Full-Time Laboratory Assistant at Binus, Blockchain Developer /
-              Researcher, and Full-Stack Web Developer. Specializing in
-              Artificial Intelligence (degree), but has a passion for future Web
-              3.0 technologies.
+              Laboratory Assistant at Binus, Blockchain Developer / Researcher,
+              and Full-Stack Web Developer. Specializing in Artificial
+              Intelligence, but has a passion for future Web 3.0 technologies.
             </p>
 
             <div className='block sm:flex items-center mt-8 space-y-4'>

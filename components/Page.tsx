@@ -9,7 +9,7 @@ interface Props {
 
 function Page({
   title = 'Farrel Darian',
-  description = 'Full-Time Laboratory Assistant at Binus, Blockchain Developer / Researcher, and Full-Stack Web Developer.',
+  description = 'Laboratory Assistant at Binus, Blockchain Developer / Researcher, and Full-Stack Web Developer. Specializing in Artificial Intelligence, but has a passion for future Web 3.0 technologies.',
   children,
 }: Props) {
   return (
