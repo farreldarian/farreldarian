@@ -19,7 +19,13 @@ export default function IndexPage() {
             Innovating as an experienced full-stack engineer, specializing in
             blockchain and web technology, educated in computer science and AI.
           </p>
-          <p>Currently building Netra as CTO. Previously at GDP Labs.</p>
+          <p>
+            Currently building{' '}
+            <Link href='https://netra.live' external>
+              Netra
+            </Link>{' '}
+            as CTO. Previously at GDP Labs.
+          </p>
           <p>Based in Jakarta with global mindset.</p>
         </section>
 
