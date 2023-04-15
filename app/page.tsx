@@ -3,7 +3,7 @@ import { type AnchorHTMLAttributes } from 'react'
 export default function IndexPage() {
   return (
     <main className='min-h-screen grid place-content-center'>
-      <div className='max-w-4xl mx-auto space-y-12'>
+      <div className='max-w-3xl mx-auto space-y-12'>
         <section className='text-2xl space-y-6'>
           <p>
             Farrel Darian, crafting interfaces that abstract complexity.
