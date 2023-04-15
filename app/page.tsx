@@ -9,7 +9,7 @@ export default function IndexPage() {
   return (
     <main className='min-h-screen grid place-content-center'>
       <div className='max-w-3xl mx-auto space-y-12'>
-        <section className='text-2xl space-y-6'>
+        <section className='text-2xl space-y-6 font-medium'>
           <p>
             Farrel Darian, crafting interfaces that abstract complexity.
             Seamlessly blending art with cutting-edge technology, pushing the
@@ -116,7 +116,7 @@ function TalksCard(props: {
           className='group-hover:translate-x-[2px] group-hover:-translate-y-[2px] transition-transform'
         />
       </span>
-      <p>
+      <p className='font-medium'>
         {props.type}: {props.title}
       </p>
       <p className='text-zinc-400 text-sm group-hover:text-zinc-950 transition-colors'>
