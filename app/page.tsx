@@ -1,4 +1,9 @@
-import { type AnchorHTMLAttributes } from 'react'
+import {
+  HTMLAttributes,
+  type AnchorHTMLAttributes,
+  type ReactNode,
+} from 'react'
+import ArrowUpRight from './ArrowUpRight'
 
 export default function IndexPage() {
   return (
@@ -32,6 +37,25 @@ export default function IndexPage() {
             github
           </Link>
         </section>
+
+        <Section title='Talks' className='flex gap-6 overflow-x-auto'>
+          <TalksCard
+            event='AsiaBerlin'
+            title='Building the future with Music & Healthcare - the Indonesia way'
+            type='Panel'
+            place='Berlin'
+            year='2022'
+            href='https://www.youtube.com/watch?t=19891&v=B4GdwBBQUQs&feature=youtu.be'
+          />
+          <TalksCard
+            event='Beyond B'
+            type='Seminar'
+            title='Smart Contract Programming with Solidity'
+            place='Virtual'
+            year='2021'
+            href='https://www.kaskus.co.id/thread/610ba83e5263da119c5945c3/gagal-paham-dengan-crypto-join-webinar-beyond-b--how-crypto-works-under-the-hood/'
+          />
+        </Section>
       </div>
     </main>
   )
@@ -52,6 +76,52 @@ function Link({ children, external, ...rest }: LinkProps) {
       {...rest}
     >
       {children}
+    </a>
+  )
+}
+
+function Section({
+  title,
+  children,
+  ...rest
+}: HTMLAttributes<HTMLDivElement> & { title: string; children: ReactNode }) {
+  return (
+    <section className='space-y-4'>
+      <h2 className='font-medium'>{title}</h2>
+      <div {...rest}>{children}</div>
+    </section>
+  )
+}
+
+function TalksCard(props: {
+  href: string
+  event: string
+  type: string
+  title: string
+  place: string
+  year: string
+}) {
+  return (
+    <a
+      href={props.href}
+      target='_blank'
+      rel='noopener noreferrer'
+      className='py-5 px-4 border border-zinc-300 rounded space-y-5 group'
+    >
+      <span className='flex justify-between text-zinc-400 text-sm group-hover:text-zinc-950 transition-colors'>
+        <p>{props.event}</p>
+        <ArrowUpRight
+          width={18}
+          height={18}
+          className='group-hover:translate-x-[2px] group-hover:-translate-y-[2px] transition-transform'
+        />
+      </span>
+      <p>
+        {props.type}: {props.title}
+      </p>
+      <p className='text-zinc-400 text-sm group-hover:text-zinc-950 transition-colors'>
+        {props.place} · {props.year}
+      </p>
     </a>
   )
 }
