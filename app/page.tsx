@@ -7,7 +7,7 @@ export default function IndexPage() {
         <section className='text-2xl space-y-6'>
           <p>
             Farrel Darian, crafting interfaces that abstract complexity.
-            Seamlessly bleding art with cutting-edge technology, pushing the
+            Seamlessly blending art with cutting-edge technology, pushing the
             boundaries of what’s possible.
           </p>
           <p>
