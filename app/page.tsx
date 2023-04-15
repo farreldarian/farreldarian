@@ -24,7 +24,11 @@ export default function IndexPage() {
             <Link href='https://netra.live' external>
               Netra
             </Link>{' '}
-            as CTO. Previously at GDP Labs.
+            as CTO. Previously at{' '}
+            <Link href='https://www.gdplabs.id/' external>
+              GDP Labs
+            </Link>
+            .
           </p>
           <p>Based in Jakarta with global mindset.</p>
         </section>
