@@ -20,8 +20,18 @@ export default function RootLayout({
         className={`${assistant.variable} font-sans text-zinc-950 bg-zinc-50`}
       >
         {children}
+        <footer className='border-t border-zinc-200 py-3 text-zinc-400'>
+          <div className='max-w-3xl mx-auto flex justify-between w-full'>
+            <p>Passion driven development</p>
+            <p>© {getCurrentYear()}</p>
+          </div>
+        </footer>
       </body>
       <Analytics />
     </html>
   )
+}
+
+function getCurrentYear() {
+  return new Date().getFullYear()
 }
