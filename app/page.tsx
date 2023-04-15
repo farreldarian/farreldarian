@@ -62,6 +62,15 @@ export default function IndexPage() {
             href='https://www.kaskus.co.id/thread/610ba83e5263da119c5945c3/gagal-paham-dengan-crypto-join-webinar-beyond-b--how-crypto-works-under-the-hood/'
           />
         </Section>
+
+        <Section title='Music' className='flex items-center gap-6'>
+          <Link href='https://soundcloud.com/dearen' external>
+            Soundcloud
+          </Link>
+          <Link href='https://music.apple.com/profile/farreldarian' external>
+            Apple Music
+          </Link>
+        </Section>
       </div>
     </main>
   )
