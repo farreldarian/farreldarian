@@ -1,11 +1,14 @@
 import type { AppProps } from 'next/app'
+import { Analytics } from '@vercel/analytics/react'
 
 import '@styles/global.css'
-import { useAnalyticsView } from '@lib/firebase/hooks'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useAnalyticsView()
-
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Analytics />
+      <Component {...pageProps} />
+    </>
+  )
 }
 export default MyApp
