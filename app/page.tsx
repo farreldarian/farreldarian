@@ -1,7 +1,9 @@
+import { type AnchorHTMLAttributes } from 'react'
+
 export default function IndexPage() {
   return (
     <main className='min-h-screen grid place-content-center'>
-      <div className='max-w-4xl mx-auto'>
+      <div className='max-w-4xl mx-auto space-y-12'>
         <section className='text-2xl space-y-6'>
           <p>
             Farrel Darian, crafting interfaces that abstract complexity.
@@ -15,7 +17,41 @@ export default function IndexPage() {
           <p>Currently building Netra as CTO. Previously at GDP Labs.</p>
           <p>Based in Jakarta with global mindset.</p>
         </section>
+
+        <section className='flex gap-6 text-lg'>
+          <Link href='mailto:contact@farreldarian.com' external>
+            Say hello
+          </Link>
+          <Link href='https://www.linkedin.com/in/farreldarian/' external>
+            linked in
+          </Link>
+          <Link href='https://twitter.com/farreldarian' external>
+            twitter
+          </Link>
+          <Link href='https://github.com/farreldarian' external>
+            github
+          </Link>
+        </section>
       </div>
     </main>
+  )
+}
+
+type LinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
+  external?: boolean
+}
+
+function Link({ children, external, ...rest }: LinkProps) {
+  return (
+    <a
+      className='border-b border-zinc-300 hover:border-zinc-950 transition-colors ease-out duration-100'
+      {...(external && {
+        target: '_blank',
+        rel: 'noopener noreferrer',
+      })}
+      {...rest}
+    >
+      {children}
+    </a>
   )
 }
