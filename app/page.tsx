@@ -7,7 +7,7 @@ import ArrowUpRight from './ArrowUpRight'
 
 export default function IndexPage() {
   return (
-    <main className='min-h-screen grid place-content-center'>
+    <main className='min-h-screen grid place-content-center py-28'>
       <div className='max-w-3xl mx-auto space-y-12'>
         <section className='text-2xl space-y-6 font-medium'>
           <p>
