@@ -7,7 +7,7 @@ import ArrowUpRight from './ArrowUpRight'
 
 export default function IndexPage() {
   return (
-    <main className='min-h-screen grid place-content-center py-28'>
+    <main className='min-h-screen grid place-content-center py-28 p-6'>
       <div className='max-w-3xl mx-auto space-y-12'>
         <section className='text-2xl space-y-6 font-medium'>
           <p>
@@ -33,7 +33,7 @@ export default function IndexPage() {
           <p>Based in Jakarta with global mindset.</p>
         </section>
 
-        <section className='flex gap-6 text-lg'>
+        <section className='flex gap-6 text-lg flex-wrap'>
           <Link href='mailto:contact@farreldarian.com' external>
             Say hello
           </Link>
@@ -125,7 +125,7 @@ function TalksCard(props: {
       href={props.href}
       target='_blank'
       rel='noopener noreferrer'
-      className='py-5 px-4 border border-zinc-300 rounded space-y-5 group'
+      className='flex-shrink-0 py-5 px-4 border border-zinc-300 rounded space-y-5 group'
     >
       <span className='flex justify-between text-zinc-400 text-sm group-hover:text-zinc-950 transition-colors'>
         <p>{props.event}</p>
