@@ -8,7 +8,7 @@ import ArrowUpRight from './ArrowUpRight'
 export default function IndexPage() {
   return (
     <main className='min-h-screen grid place-content-center py-28 p-6'>
-      <div className='max-w-3xl mx-auto space-y-12'>
+      <div className='md:max-w-3xl md:mx-auto space-y-12 overflow-hidden'>
         <section className='text-2xl space-y-6 font-medium'>
           <p>
             Farrel Darian, crafting interfaces that abstract complexity.
@@ -125,7 +125,7 @@ function TalksCard(props: {
       href={props.href}
       target='_blank'
       rel='noopener noreferrer'
-      className='flex-shrink-0 w-96 py-5 px-4 border border-zinc-300 rounded space-y-5 group'
+      className='w-96 flex-shrink-0 py-5 px-4 border border-zinc-300 rounded space-y-5 group'
     >
       <span className='flex justify-between text-zinc-400 text-sm group-hover:text-zinc-950 transition-colors'>
         <p>{props.event}</p>
