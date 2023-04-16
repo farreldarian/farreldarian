@@ -125,7 +125,7 @@ function TalksCard(props: {
       href={props.href}
       target='_blank'
       rel='noopener noreferrer'
-      className='flex-shrink-0 py-5 px-4 border border-zinc-300 rounded space-y-5 group'
+      className='flex-shrink-0 w-96 py-5 px-4 border border-zinc-300 rounded space-y-5 group'
     >
       <span className='flex justify-between text-zinc-400 text-sm group-hover:text-zinc-950 transition-colors'>
         <p>{props.event}</p>
