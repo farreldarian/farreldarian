@@ -10,11 +10,7 @@ export default function IndexPage() {
     <main className='min-h-screen grid place-content-center py-28 p-6'>
       <div className='md:max-w-3xl md:mx-auto space-y-12 overflow-hidden'>
         <section className='text-2xl space-y-6 font-medium'>
-          <p>
-            Farrel Darian, crafting interfaces that abstract complexity.
-            Seamlessly blending art with cutting-edge technology, pushing the
-            boundaries of what’s possible.
-          </p>
+          <p>Farrel Darian</p>
           <p>
             Innovating as an experienced full-stack engineer, specializing in
             blockchain and web technology, educated in computer science and AI.
